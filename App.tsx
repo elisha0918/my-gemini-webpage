@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { 
-  Github, 
-  ExternalLink, 
-  Mail, 
-  ChevronRight, 
-  MousePointer2, 
-  Play, 
-  X, 
-  CalendarDays, 
+import {
+  Github,
+  ExternalLink,
+  Mail,
+  ChevronRight,
+  MousePointer2,
+  Play,
+  X,
+  CalendarDays,
   Settings,
   Coffee,
   TrendingUp,
@@ -47,7 +47,7 @@ const App: React.FC = () => {
       tech: ["n8n", "HTML Scraping", "JavaScript (Logic)", "Line Notify"],
       icon: <Globe className="text-blue-400" />,
       color: "from-blue-500/20 to-cyan-500/20",
-      videoUrl: "https://file.notion.so/f/f/970cffe2-2027-45a3-95e8-744689bb8cb3/bb40cc03-954f-4a93-88fa-7ac574a72f55/%E6%88%90%E5%8A%9F%E6%8A%93%E5%88%B0%E5%8C%AF%E7%8E%87%E4%B8%AD%E5%83%B9(%E6%88%AA%E5%9C%96%E5%BD%B1%E7%89%87).mp4?table=block&id=20fdb692-0536-802c-bc1d-d0f3b6f2cb7d&spaceId=970cffe2-2027-45a3-95e8-744689bb8cb3&expirationTimestamp=1766109600000&signature=xCqzeVnTkCMUlUOSV0xT3BQZyDsXDDfKby0RiLO8PTE&downloadName=%E6%88%90%E5%8A%9F%E6%8A%93%E5%88%B0%E5%8C%AF%E7%8E%87%E4%B8%AD%E5%83%B9%28%E6%88%AA%E5%9C%96%E5%BD%B1%E7%89%87%29.mp4",
+      videoUrl: "https://file.notion.so/f/f/970cffe2-2027-45a3-95e8-744689bb8cb3/bb40cc03-954f-4a93-88fa-7ac574a72f55/%E6%88%90%E5%8A%9F%E6%8A%93%E5%88%B0%E5%8C%AF%E7%8E%87%E4%B8%AD%E5%83%B9(%E6%88%AA%E5%9C%96%E5%BD%B1%E7%89%87).mp4?table=block&id=20fdb692-0536-802c-bc1d-d0f3b6f2cb7d&spaceId=970cffe2-2027-45a3-95e8-744689bb8cb3&expirationTimestamp=1766296800000&signature=1QQywhXxFYb16VtF1Pe6JvpIpZ-La9WAL1KEd4ZaTts&downloadName=%E6%88%90%E5%8A%9F%E6%8A%93%E5%88%B0%E5%8C%AF%E7%8E%87%E4%B8%AD%E5%83%B9%28%E6%88%AA%E5%9C%96%E5%BD%B1%E7%89%87%29.mp4",
       demoUrl: "#"
     },
     {
@@ -85,8 +85,8 @@ const App: React.FC = () => {
     }
   ];
 
-  const filteredProjects = activeTab === 'all' 
-    ? projects 
+  const filteredProjects = activeTab === 'all'
+    ? projects
     : projects.filter(p => p.category === activeTab);
 
   const handleVideoClick = useCallback((url: string) => {
@@ -131,7 +131,7 @@ const App: React.FC = () => {
           <div className="absolute top-20 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] animate-pulse"></div>
           <div className="absolute bottom-20 right-1/4 w-[600px] h-[600px] bg-emerald-600/5 rounded-full blur-[120px]"></div>
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           <div className="inline-flex items-center space-x-2 bg-slate-900/50 border border-slate-800 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
@@ -141,7 +141,7 @@ const App: React.FC = () => {
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">不斷研發中 • AI Power 2024</span>
           </div>
           <h1 className="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tighter">
-            打造 <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">智能自動化</span><br/>的未來
+            打造 <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">智能自動化</span><br />的未來
           </h1>
           <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
             很高興能分享我如何透過 <span className="text-white font-medium">Gemini Canvas</span> 開發高效 AI 小工具，並利用 <span className="text-white font-medium">n8n</span> 實現極致自動化工作流。
@@ -185,12 +185,12 @@ const App: React.FC = () => {
         {/* 作品網格 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {filteredProjects.map((project) => (
-            <div 
+            <div
               key={project.id}
               className="group relative bg-slate-900/40 border border-slate-800/60 rounded-[2.5rem] overflow-hidden hover:border-blue-500/50 transition-all duration-700 shadow-2xl hover:shadow-blue-500/10 backdrop-blur-sm"
             >
               <div className={`absolute -top-10 -right-10 w-48 h-48 bg-gradient-to-br ${project.color} blur-[60px] opacity-30 group-hover:opacity-60 transition-opacity duration-700`}></div>
-              
+
               <div className="p-10 relative flex flex-col h-full">
                 <div className="mb-8 p-4 bg-slate-800/50 w-fit rounded-[1.25rem] shadow-inner border border-slate-700/50">
                   {project.icon}
@@ -208,9 +208,9 @@ const App: React.FC = () => {
                 </div>
                 <div className="flex flex-wrap items-center gap-y-4 gap-x-8 pt-6 border-t border-slate-800/50">
                   {project.demoUrl !== "#" && (
-                    <a 
-                      href={project.demoUrl} 
-                      target="_blank" 
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center text-xs font-black text-blue-400 hover:text-blue-300 transition-colors uppercase tracking-[0.1em]"
                     >
@@ -218,7 +218,7 @@ const App: React.FC = () => {
                     </a>
                   )}
                   {project.videoUrl && (
-                    <button 
+                    <button
                       onClick={() => handleVideoClick(project.videoUrl!)}
                       className="flex items-center text-xs font-black text-emerald-400 hover:text-emerald-300 transition-colors uppercase tracking-[0.1em]"
                     >
@@ -226,7 +226,7 @@ const App: React.FC = () => {
                     </button>
                   )}
                   {project.settingsUrl && (
-                    <button 
+                    <button
                       onClick={() => handleVideoClick(project.settingsUrl!)}
                       className="flex items-center text-xs font-black text-amber-400 hover:text-amber-300 transition-colors uppercase tracking-[0.1em]"
                     >
@@ -244,16 +244,16 @@ const App: React.FC = () => {
       {selectedVideo && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-slate-950/95 backdrop-blur-xl transition-all duration-300">
           <div className="relative w-full max-w-5xl bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-[0_0_100px_rgba(0,0,0,0.5)] scale-in-center">
-            <button 
+            <button
               onClick={() => setSelectedVideo(null)}
               className="absolute top-6 right-6 p-3 bg-slate-800/80 hover:bg-red-500 text-white rounded-full z-10 transition-all shadow-xl active:scale-90"
             >
               <X size={24} />
             </button>
             <div className="aspect-video bg-black flex items-center justify-center">
-              <video 
-                controls 
-                autoPlay 
+              <video
+                controls
+                autoPlay
                 className="w-full h-full shadow-inner"
                 src={selectedVideo}
               >
@@ -274,8 +274,8 @@ const App: React.FC = () => {
             <h2 className="text-4xl font-black mb-8 tracking-tight">我的極致懶人哲學</h2>
             <div className="space-y-6 text-slate-400 leading-relaxed text-lg">
               <p className="text-xl">
-                身處 AI 盛世，我的終極目標就是：<br/>
-                <span className="text-blue-400 font-black text-3xl md:text-4xl block mt-2">能讓 Gemini 動手的，<br/>我絕不親自碰。</span>
+                身處 AI 盛世，我的終極目標就是：<br />
+                <span className="text-blue-400 font-black text-3xl md:text-4xl block mt-2">能讓 Gemini 動手的，<br />我絕不親自碰。</span>
               </p>
               <p>
                 透過 Python、n8n 和 Gemini，把煩人的瑣事交給 AI 代勞。
@@ -285,15 +285,15 @@ const App: React.FC = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {skills.map((skill) => (
               <div key={skill.name} className="bg-slate-800/30 p-8 rounded-[2rem] border border-slate-700/50 shadow-2xl backdrop-blur-sm group hover:border-blue-500/30 transition-all">
                 <div className="text-xs font-black text-slate-500 mb-3 uppercase tracking-widest">{skill.name}</div>
                 <div className="text-3xl font-black text-white mb-6 group-hover:text-blue-400 transition-colors">{skill.level}</div>
                 <div className="w-full bg-slate-700/50 h-2 rounded-full overflow-hidden shadow-inner">
-                  <div 
-                    className="bg-gradient-to-r from-blue-600 to-emerald-500 h-full rounded-full transition-all duration-1000 ease-out" 
+                  <div
+                    className="bg-gradient-to-r from-blue-600 to-emerald-500 h-full rounded-full transition-all duration-1000 ease-out"
                     style={{ width: skill.level }}
                   ></div>
                 </div>

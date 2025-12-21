@@ -309,7 +309,7 @@ const App: React.FC = () => {
             Elisha_0918
           </div>
           <p className="text-slate-500 text-xs font-bold uppercase tracking-[0.3em]">
-            © 2024 Built with React & Gemini. 讓 AI 幹活，我享受生活。
+            © 2025 Built with React & Gemini. 享受生活。
           </p>
         </div>
       </footer>

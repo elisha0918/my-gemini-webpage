@@ -142,12 +142,9 @@ GEMINI_API_KEY=your_api_key_here
 
 ## 📄 授權
 
-© 2024 Elisha_0918. Built with React & Gemini.
+© 2025 Elisha_0918. Built with React & Gemini.
 
-## 🔗 相關連結
 
-- **線上展示**: https://elisha0918.github.io/my-gemini-webpage/
-- **AI Studio**: https://ai.studio/apps/drive/1mNde3oqoy56HMIPtHXmE_UfLbGkfuKe3
 
 ---
 

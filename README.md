@@ -149,5 +149,5 @@ GEMINI_API_KEY=your_api_key_here
 ---
 
 <div align="center">
-  <strong>讓 AI 幹活，我享受生活 ☕</strong>
+  <strong>享受生活 ☕</strong>
 </div>

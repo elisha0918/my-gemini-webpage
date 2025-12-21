@@ -274,14 +274,14 @@ const App: React.FC = () => {
             <h2 className="text-4xl font-black mb-8 tracking-tight">我的極致懶人哲學</h2>
             <div className="space-y-6 text-slate-400 leading-relaxed text-lg">
               <p className="text-xl">
-                身處 AI 盛世，我的終極目標就是：<br />
-                <span className="text-blue-400 font-black text-3xl md:text-4xl block mt-2">能讓 Gemini 動手的，<br />我絕不親自碰。</span>
+                身處 AI 盛世，終極目標就是：<br />
+                <span className="text-blue-400 font-black text-3xl md:text-4xl block mt-2">讓AI代勞。<br /></span>
               </p>
               <p>
                 透過 Python、n8n 和 Gemini，把煩人的瑣事交給 AI 代勞。
               </p>
               <p className="italic text-slate-500 border-l-4 border-slate-800 pl-6 py-2">
-                這樣我就可以投入更多思考時間，創作出更多具備價值的作品，而不是花時間在無意義的滑鼠點擊與複製貼上。
+                我想投入更多思考時間，創作出更多具備價值的作品。
               </p>
             </div>
           </div>
